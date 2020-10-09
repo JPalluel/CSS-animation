@@ -1,0 +1,64 @@
+#stage{
+    width: 598px;
+    height: 598px;
+    margin: auto;
+    border: 1px solid black;
+}
+
+#hero{
+    width: 73px;
+    height: 73px;
+    border: 1px dashed red;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    padding: 0;
+    margin: 0;
+    animation: 
+    cssanimation1 5s linear 0s 1 forwards,
+    cssanimation2 2s linear 5s 1 forwards,
+    cssanimation3 0.5s linear 7s 1 forwards,
+    cssanimation4 2.5s linear 9s 1 forwards,
+    cssanimation5 5s linear 12s 1 forwards;
+
+}
+
+@keyframes cssanimation1{
+
+    0%{ transform: translateX(0px)}
+
+    100%{transform: translateX(485px)}
+}
+
+@keyframes cssanimation2{
+
+    100%{ transform: translateX(485px) translateY(185px)}
+}
+
+@keyframes cssanimation3{
+
+
+    100%{ transform: translateX(242px) translateY(185px) rotate(45deg);
+    }
+}
+
+@keyframes cssanimation4{
+
+    100%{ transform: translateX(0px) translateY(185px) rotate(90deg);
+    border:1px dashed #0900BD;
+    }
+}
+
+@keyframes cssanimation5{
+
+    50%{ transform: translateX(243px) translateY(280px);
+    border-radius: 50%;
+    }
+
+    100%{ transform: translateX(460px) translateY(460px) scale(2);
+    border-radius: 50%;
+    border: none;
+    background-image: linear-gradient(#F76B1C, #FBDA61)
+    }
+}
+
